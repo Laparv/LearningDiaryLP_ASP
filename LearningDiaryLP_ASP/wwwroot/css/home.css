@@ -1,0 +1,11 @@
+﻿#homeScreen{
+    color: black;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+#homepage{
+    margin-top: 20%;
+    margin-bottom: auto;
+}

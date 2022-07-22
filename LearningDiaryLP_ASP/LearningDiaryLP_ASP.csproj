@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="assets\" />
+    <Folder Include="wwwroot\css\assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\assets\library.jpg" />
+    <None Include="wwwroot\css\assets\library2.jpg" />
   </ItemGroup>
 
   <ItemGroup>

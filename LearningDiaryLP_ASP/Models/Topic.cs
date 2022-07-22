@@ -18,6 +18,19 @@ namespace LearningDiaryLP_ASP.Models
         public bool? InProgress { get; set; }
         public DateTime? CompletionDate { get; set; }
 
-      
+
+        public bool? IsInProgress()
+        {
+            if (TimeToMaster - TimeSpent <= 0)
+            {
+                InProgress = false;
+            }
+            else
+            {
+                InProgress = true;
+            }
+
+            return InProgress;
+        }
     }
 }

@@ -45,6 +45,9 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    background-image: url(assets/library2.jpg);
+    background-repeat: 0 0;
+    background-size: 100%
 }
 .footer {
     float: none;
@@ -117,4 +120,16 @@ sidenav a.active {
 .sidenav h4{
     padding-left: 10px;
     padding-top: 10px;
+}
+
+/*#entrylist {
+    background-blend-mode:color;
+    width:auto;
+    margin: auto;
+}*/
+.table{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
