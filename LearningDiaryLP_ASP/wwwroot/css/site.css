@@ -19,6 +19,7 @@ html {
     margin-left: 270px;
 }
 
+
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
@@ -45,9 +46,11 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-image: url(assets/library2.jpg);
-    background-repeat: 0 0;
-    background-size: 100%
+    background: url(assets/library.jpg) no-repeat fixed;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(50,70,80,0.7);
+    background-blend-mode: soft-light;
 }
 .footer {
     float: none;
@@ -132,4 +135,11 @@ sidenav a.active {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 20px;
+}
+h1{
+    width: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
 }

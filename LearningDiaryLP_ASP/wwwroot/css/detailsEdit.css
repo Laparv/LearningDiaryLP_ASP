@@ -1,0 +1,10 @@
+﻿#title, #info{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+}

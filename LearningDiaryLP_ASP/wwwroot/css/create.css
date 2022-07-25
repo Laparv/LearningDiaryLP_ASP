@@ -1,0 +1,40 @@
+﻿form{
+}
+.form-group{
+}
+
+#title, #info {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#createIndex{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+#card{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 20px;
+}
+.btn {
+    color:white;
+    border: none;
+    background-color: grey;
+}
+.btn hover{
+    background-color: black;
+}
+
+
