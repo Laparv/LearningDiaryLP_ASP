@@ -5,7 +5,6 @@
 
 
 
-let popup = document.getElementById("popup");
 
 function openPopup() {
     popup.classList.add("open-popup");
@@ -14,10 +13,12 @@ function closePopup() {
     popup.classList.remove("open-popup");
 }
 
-function confirmAlert() {
-
-    alert("Are you sure you want to delete this entry?")
-
+function confirmDelete() {
+    let answer = confirm("Are you sure you want to delete?")
+    if (answer) {
+        document.getElementById("deletion")
+    }
 }
+
 
 

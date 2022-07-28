@@ -71,7 +71,6 @@ body {
 }
 .btn{
     outline: none;
-    cursor: pointer;
 }
 .footer {
     float: none;
@@ -127,7 +126,7 @@ sidenav a.active {
     .nav-item {
         text-align: center;
         float: left;
-        margin: 10px;
+        margin-left: 10px;
     }
     
     #page{
