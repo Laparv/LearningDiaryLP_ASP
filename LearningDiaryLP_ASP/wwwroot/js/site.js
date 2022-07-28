@@ -14,5 +14,10 @@ function closePopup() {
     popup.classList.remove("open-popup");
 }
 
+function confirmAlert() {
+
+    alert("Are you sure you want to delete this entry?")
+
+}
 
 
