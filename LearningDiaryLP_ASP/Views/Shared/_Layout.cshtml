@@ -23,13 +23,22 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Topics" asp-action="Create">Add entry</a>
                         </li>
-
+                        <li class="nav-item">
+                            <div class="container nav-item">
+                                <button type="submit" class="btn" onclick="openPopup()">Instructions</button>
+                                
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
                 <div class="container-fluid" id="page">
                     <main role="main" class="pb-3">
                         @RenderBody()
+                        <div class="popup" id="popup">
+                            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</p>
+                            <button type="button" onclick="closePopup()">ok</button>
+                        </div>
                     </main>
                 </div>
         <footer class="border-top footer text-muted container-flui">
@@ -43,5 +52,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+<script src="~/js/site.js"></script>
 </body>
 </html>

@@ -52,6 +52,27 @@ body {
     background-color: rgba(50,70,80,0.7);
     background-blend-mode: soft-light;
 }
+
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    box-shadow:0 2px 5px black;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+}
+.btn{
+    outline: none;
+    cursor: pointer;
+}
 .footer {
     float: none;
     bottom: 0;
@@ -78,8 +99,13 @@ ul{
     height: 100%;
     overflow: auto;
 }
-.sidenav a{
-    
+#alert{
+    background: white;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+.nav-item{
     text-align: center;
     padding: 10px;
 }
@@ -98,12 +124,12 @@ sidenav a.active {
         height: auto;
         position: relative;
     }
-    
-    .sidenav a {
+    .nav-item {
+        text-align: center;
         float: left;
         margin: 10px;
     }
-
+    
     #page{
         margin: 0;
     }
@@ -143,3 +169,4 @@ h1{
     padding: 10px;
     border-radius: 20px;
 }
+
