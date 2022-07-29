@@ -20,5 +20,11 @@ function confirmDelete() {
     }
 }
 
+function grey(object) {
+    object.style.backgroundColor = '#d3d3d3';
+}
+function white(object) {
+    object.style.backgroundColor = 'white';
+}
 
 
