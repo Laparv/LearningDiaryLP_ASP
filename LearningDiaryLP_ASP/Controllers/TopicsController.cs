@@ -101,6 +101,8 @@ namespace LearningDiaryLP_ASP.Controllers
             {
                 try
                 {
+                    topic.IsInProgress();
+                    topic.EditCompletionDate();
                     _context.Update(topic);
                     await _context.SaveChangesAsync();
                 }
