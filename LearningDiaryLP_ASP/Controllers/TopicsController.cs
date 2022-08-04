@@ -54,15 +54,19 @@ namespace LearningDiaryLP_ASP.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Description,TimeToMaster,TimeSpent,Source,StartLearningDate,InProgress,CompletionDate")] Topic topic)
+        public async Task<IActionResult> Create([Bind("Id,Title,Description,TimeToMaster,TimeSpent,Source,StartLearningDate,CompletionDate")] Topic topic)
         {
+            
             if (ModelState.IsValid)
             {
+                topic.IsInProgress();
+                topic.EditCompletionDate();
                 _context.Add(topic);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(topic);
+
         }
 
         // GET: Topics/Edit/5
@@ -150,4 +154,5 @@ namespace LearningDiaryLP_ASP.Controllers
             return _context.Topic.Any(e => e.Id == id);
         }
     }
+   
 }

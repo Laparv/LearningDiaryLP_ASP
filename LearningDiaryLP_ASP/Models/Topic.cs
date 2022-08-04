@@ -32,5 +32,21 @@ namespace LearningDiaryLP_ASP.Models
 
             return InProgress;
         }
+
+        public DateTime? EditCompletionDate() //edits completion date to database
+        {
+            if (TimeToMaster - TimeSpent <= 0)
+            {
+                CompletionDate = Convert.ToDateTime(StartLearningDate).AddDays(Convert.ToDouble(TimeSpent));
+            }
+            else if (TimeToMaster - TimeSpent > 0)
+            {
+                CompletionDate = Convert.ToDateTime(StartLearningDate).AddDays(Convert.ToDouble(TimeToMaster));
+            }
+
+            return CompletionDate;
+
+        }
     }
 }
+
