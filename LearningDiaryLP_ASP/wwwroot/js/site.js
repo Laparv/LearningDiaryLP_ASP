@@ -27,5 +27,3 @@ function white(object) {
     object.style.backgroundColor = 'white';
 }
 
-
-
