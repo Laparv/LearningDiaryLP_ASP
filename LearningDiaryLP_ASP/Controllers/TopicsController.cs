@@ -135,7 +135,11 @@ namespace LearningDiaryLP_ASP.Controllers
                 return NotFound();
             }
 
-            return View(topic);
+            _context.Topic.Remove(topic);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+
         }
 
         // POST: Topics/Delete/5
